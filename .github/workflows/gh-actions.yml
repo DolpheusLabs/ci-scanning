@@ -27,14 +27,14 @@ jobs:
       
       # Blacken the Python File
 ######################################################## Section 1: Uncomment through line 37
-#      - name: Set up Python 3.7
-#        uses: actions/setup-python@v1
-#        with:
-#          python-version: 3.7
-#      - name: Install Black
-#        run: pip install black
-#      - name: Blacken the python file(s)
-#        run: black .
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+      - name: Install Black
+        run: pip install black
+      - name: Blacken the python file(s)
+        run: black .
 
 # Due to there not being a way to set depends_on, I'm running these 2 parts into a single workflow.
   #build:
